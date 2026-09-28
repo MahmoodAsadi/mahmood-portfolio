@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Warden’s Ascent case study — gameplay systems, AI, multiplayer combat, production tooling, and UI by Mahmood Asadi.">
+  <title>Warden’s Ascent — Mahmood Asadi</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#case-study">Skip to case study</a>
+  <header class="site-header">
+    <a class="monogram" href="../index.html" aria-label="Mahmood Asadi, portfolio home">Mahmood Asadi</a>
+    <nav aria-label="Project navigation">
+      <a class="nav-projects" href="../index.html">Home</a>
+      <a href="#responsibilities">Responsibilities</a>
+      <a href="#gallery">Gallery</a>
+      <a class="nav-contact" href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="case-study">
+    <section class="case-hero" aria-labelledby="case-title">
+      <a class="back-link" href="../index.html#projects">← Back to all projects</a>
+      <div class="case-title-row">
+        <div><p class="eyebrow">Pixelmon</p><h1 id="case-title">Warden’s<br>Ascent</h1></div>
+        <p class="case-intro">A multiplayer turn-based game built in Unreal Engine 5. I developed core gameplay architecture, abilities, combat systems, progression, backend integration, and player-facing interfaces.</p>
+      </div>
+      <figure class="case-cover"><img src="../assets/warden/build-your-team.jpg" alt="Warden’s Ascent characters beside team selection, victory, and character interface screens" width="1920" height="1080"></figure>
+      <div class="case-facts">
+        <p><span>Studio</span>Pixelmon</p><p><span>Role</span>Senior Game Programmer</p><p><span>Period</span>2023–2026</p><p><span>Stack</span>UE5 · C++ · Multiplayer · GAS</p>
+        <a href="https://www.wardensascent.com/" target="_blank" rel="noreferrer">Official site ↗</a>
+      </div>
+    </section>
+
+    <section class="contributions" id="responsibilities" aria-labelledby="contributions-title">
+      <div class="section-heading"><h2 id="contributions-title">Responsibilities</h2></div>
+      <div class="contribution-list">
+        <article><div><h3>Gameplay Ability System foundation</h3><p>Built most Pixelmon gameplay systems with Unreal’s Gameplay Ability System: abilities, attributes, effect executions for damage and healing, and the interfaces that explain those systems to players.</p></div><p class="system-tags">C++ / GAS / Data-driven</p></article>
+        <article><div><h3>Turn-based combat and character logic</h3><p>Implemented character targeting and AI, contributed to the multiplayer turn system, damage flow, battle resolution, winner and loser states, and reward distribution.</p></div><p class="system-tags">Multiplayer / AI / Combat</p></article>
+        <article><div><h3>Expedition and progression</h3><p>Implemented the Expedition game system and its world map, and contributed to team assignment, its associated UI, and the campaign world map.</p></div><p class="system-tags">Expedition / Progression / World map</p></article>
+        <article><div><h3>Player interfaces</h3><p>Delivered the in-game HUD and health, buff, and debuff presentation; contributed to team selection and ability descriptions.</p></div><p class="system-tags">UMG / HUD / UX</p></article>
+        <article><div><h3>Backend integration</h3><p>Contributed to communication between gameplay modules and backend services across multiple game systems.</p></div><p class="system-tags">Backend / Integration / Game modules</p></article>
+      </div>
+    </section>
+
+    <aside class="pipeline-callout" aria-labelledby="pipeline-title">
+      <h2 id="pipeline-title">Designer-authored data.<br>Production-ready assets.</h2>
+      <div class="pipeline-details">
+        <p>I created an Unreal Editor pipeline that read ability and stat specifications from Google Docs and generated Data Assets, Data Tables, Gameplay Abilities, supporting classes, and related production assets—reducing manual setup and accelerating iteration.</p>
+        <div class="pipeline-flow" aria-label="Content pipeline"><span>Google Docs</span><b aria-hidden="true">→</b><span>Validation</span><b aria-hidden="true">→</b><span>UE5 Assets</span></div>
+      </div>
+    </aside>
+
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading gallery-heading"><h2 id="gallery-title">Project gallery</h2></div>
+      <video class="project-video" controls preload="metadata" poster="../assets/warden/build-your-team.jpg">
+        <source src="../assets/warden/gameplay.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-wide" type="button" data-full="../assets/warden/collect-and-evolve.jpg" data-alt="Warden’s Ascent collection and character management presentation"><img src="../assets/warden/collect-and-evolve.jpg" alt="Warden’s Ascent collection and character management presentation" width="1920" height="1080" loading="lazy"><span><b>Collection &amp; character management</b><small>Abilities, attributes and team composition</small></span></button>
+        <button class="gallery-item gallery-tall" type="button" data-full="../assets/warden/expedition.jpg" data-alt="Warden’s Ascent Expedition world map and team assignment interface"><img src="../assets/warden/expedition.jpg" alt="Warden’s Ascent Expedition world map and team assignment interface" width="1350" height="1688" loading="lazy"><span><b>Expedition system</b><small>World map, team assignment and rewards</small></span></button>
+        <button class="gallery-item gallery-wide" type="button" data-full="../assets/warden/bosses.jpg" data-alt="Three elemental boss characters from Warden’s Ascent"><img src="../assets/warden/bosses.jpg" alt="Three elemental boss characters from Warden’s Ascent" width="1920" height="1080" loading="lazy"><span><b>Turn-based encounters</b><small>Targeting, effects, AI and battle flow</small></span></button>
+      </div>
+    </section>
+
+    <nav class="project-footer-nav" aria-label="Project navigation"><a href="../index.html#projects">← All projects</a><a href="../index.html#contact">Start a conversation →</a></nav>
+  </main>
+  <footer><p>© 2026 Mahmood Asadi</p><p>Senior Game Programmer · Unreal Engine &amp; C++</p></footer>
+  <dialog class="lightbox" aria-label="Expanded project image"><button class="lightbox-close" type="button" aria-label="Close expanded image">Close</button><img src="" alt=""></dialog>
+  <script src="../script.js"></script>
+</body>
+</html>

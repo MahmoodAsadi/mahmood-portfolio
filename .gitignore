@@ -1,0 +1,33 @@
+# Local hosting metadata from previous tooling
+/.openai/
+
+# Local maintenance scripts
+/scripts/
+
+# Generated deployment archives
+/site-publish.tar.gz
+*.zip
+
+# Temporary build and verification files
+/tmp/
+*.tmp
+*.temp
+
+# Python-generated files and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system metadata
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini

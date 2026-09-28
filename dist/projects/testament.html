@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Testament: The Order of High Human case study — AI, gameplay abilities, traversal, runtime systems, and Unreal Editor tools by Mahmood Asadi.">
+  <title>Testament: The Order of High Human — Mahmood Asadi</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#case-study">Skip to case study</a>
+  <header class="site-header">
+    <a class="monogram" href="../index.html" aria-label="Mahmood Asadi, portfolio home">Mahmood Asadi</a>
+    <nav aria-label="Project navigation">
+      <a class="nav-projects" href="../index.html">Home</a>
+      <a href="#responsibilities">Responsibilities</a>
+      <a href="#gallery">Gallery</a>
+      <a class="nav-contact" href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="case-study">
+    <section class="case-hero" aria-labelledby="case-title">
+      <a class="back-link" href="../index.html#projects">← Back to all projects</a>
+      <div class="case-title-row">
+        <div><p class="eyebrow">Fairyship Games</p><h1 id="case-title">Testament:<br>The Order of<br>High Human</h1></div>
+        <p class="case-intro">A first-person fantasy action game where I developed combat AI, boss systems, gameplay abilities, traversal, runtime frameworks, and Unreal Editor tools.</p>
+      </div>
+      <figure class="case-cover"><img src="../assets/testament/cover.jpg" alt="Key art for Testament: The Order of High Human showing the protagonist overlooking a fantasy landscape" width="2560" height="1440"></figure>
+      <div class="case-facts">
+        <p><span>Studio</span>Fairyship Games</p><p><span>Role</span>Senior Game Programmer</p><p><span>Period</span>2019–2023</p><p><span>Stack</span>Unreal Engine · C++ · GAS</p>
+        <div class="case-links"><a href="https://testamentseries.com/" target="_blank" rel="noreferrer">Official site ↗</a><a href="https://store.steampowered.com/app/2176430/Testament_The_Order_of_High_Human/" target="_blank" rel="noreferrer">Steam ↗</a><a href="https://fairyshipgames.com/" target="_blank" rel="noreferrer">Studio ↗</a></div>
+      </div>
+    </section>
+
+    <section class="contributions" id="responsibilities" aria-labelledby="contributions-title">
+      <div class="section-heading"><h2 id="contributions-title">Responsibilities</h2></div>
+      <div class="contribution-list">
+        <article><div><h3>Crowd AI and attack coordination</h3><p>Implemented crowd enemy AI, animation systems, and a crowd manager that coordinated attack behavior across encounters.</p></div><p class="system-tags">AI / Crowd / Animation</p></article>
+        <article><div><h3>Gameplay Ability System and player locomotion</h3><p>Implemented GAS attributes, gameplay abilities, effects, and attribute execution classes, alongside player locomotion systems for climbing, vaulting, ledge walking, wall running, and rope climbing.</p></div><p class="system-tags">GAS / C++ / Locomotion</p></article>
+        <article><div><h3>Boss character systems</h3><p>Implemented all boss characters, including their AI behavior, animation blueprints, abilities, and gameplay effects.</p></div><p class="system-tags">Boss AI / Animation / Abilities</p></article>
+        <article><div><h3>Combat mechanics</h3><p>Developed projectiles, spells, traps, and supporting combat mechanics outside the core GAS implementation.</p></div><p class="system-tags">Projectiles / Spells / Traps</p></article>
+        <article><div><h3>Runtime performance systems</h3><p>Built an object pooling system and a state-machine-based spawn system to support efficient, controllable runtime encounters.</p></div><p class="system-tags">Pooling / Spawning / Optimization</p></article>
+        <article><div><h3>Production tools</h3><p>Created Unreal Editor tools for optimization, level design, and in-editor bug reporting to support the wider development team.</p></div><p class="system-tags">Editor Tools / Level Design / QA</p></article>
+      </div>
+    </section>
+
+    <aside class="pipeline-callout" aria-labelledby="runtime-title">
+      <h2 id="runtime-title">Coordinated crowds.<br>Efficient runtime systems.</h2>
+      <div class="pipeline-details">
+        <p>I paired state-driven spawning and object pooling with a crowd manager that coordinated enemy attacks—giving combat encounters clear control while reducing repeated runtime setup.</p>
+        <div class="pipeline-flow" aria-label="Encounter runtime flow"><span>Spawn states</span><b aria-hidden="true">→</b><span>Object pool</span><b aria-hidden="true">→</b><span>Crowd manager</span></div>
+      </div>
+    </aside>
+
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading gallery-heading"><h2 id="gallery-title">Project gallery</h2></div>
+      <video class="project-video" controls preload="metadata" poster="../assets/testament/cover.jpg">
+        <source src="../assets/testament/gameplay.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+      <div class="gallery-grid gallery-grid-landscape">
+        <button class="gallery-item" type="button" data-full="../assets/testament/nature-beast.jpg" data-alt="Combat encounter with a creature in a forest environment"><img src="../assets/testament/nature-beast.jpg" alt="Combat encounter with a creature in a forest environment" width="1920" height="1080" loading="lazy"><span><b>Creature combat</b><small>Abilities and encounter AI</small></span></button>
+        <button class="gallery-item" type="button" data-full="../assets/testament/crowd-combat.jpg" data-alt="First-person combat against a crowd of enemies"><img src="../assets/testament/crowd-combat.jpg" alt="First-person combat against a crowd of enemies" width="1920" height="1080" loading="lazy"><span><b>Crowd encounters</b><small>Coordination, spawning and combat behavior</small></span></button>
+        <button class="gallery-item" type="button" data-full="../assets/testament/climbing-bow.png" data-alt="First-person bow gameplay in a vertical rocky environment"><img src="../assets/testament/climbing-bow.png" alt="First-person bow gameplay in a vertical rocky environment" width="1920" height="1080" loading="lazy"><span><b>Traversal systems</b><small>Climbing, vaulting and vertical movement</small></span></button>
+        <button class="gallery-item" type="button" data-full="../assets/testament/melee-enemy.png" data-alt="First-person melee combat against an armored enemy"><img src="../assets/testament/melee-enemy.png" alt="First-person melee combat against an armored enemy" width="1920" height="1080" loading="lazy"><span><b>Enemy combat</b><small>AI, animation and abilities</small></span></button>
+        <button class="gallery-item" type="button" data-full="../assets/testament/ruins.png" data-alt="Dark fantasy ruins explored from a first-person perspective"><img src="../assets/testament/ruins.png" alt="Dark fantasy ruins explored from a first-person perspective" width="1920" height="1080" loading="lazy"><span><b>World exploration</b><small>Locomotion through designed spaces</small></span></button>
+        <button class="gallery-item" type="button" data-full="../assets/testament/life-spell.png" data-alt="A green magical ability being used in a fantasy environment"><img src="../assets/testament/life-spell.png" alt="A green magical ability being used in a fantasy environment" width="1920" height="1080" loading="lazy"><span><b>Gameplay abilities</b><small>Spells, effects and interactions</small></span></button>
+        <button class="gallery-item" type="button" data-full="../assets/testament/crowd-bow.png" data-alt="Bow combat against multiple enemies in an arena"><img src="../assets/testament/crowd-bow.png" alt="Bow combat against multiple enemies in an arena" width="1920" height="1080" loading="lazy"><span><b>Ranged combat</b><small>Projectiles and crowd behavior</small></span></button>
+      </div>
+    </section>
+
+    <nav class="project-footer-nav" aria-label="Project navigation"><a href="../index.html#projects">← All projects</a><a href="../index.html#contact">Start a conversation →</a></nav>
+  </main>
+  <footer><p>© 2026 Mahmood Asadi</p><p>Senior Game Programmer · Unreal Engine &amp; C++</p></footer>
+  <dialog class="lightbox" aria-label="Expanded project image"><button class="lightbox-close" type="button" aria-label="Close expanded image">Close</button><img src="" alt=""></dialog>
+  <script src="../script.js"></script>
+</body>
+</html>
